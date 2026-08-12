@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer
+        {
+            height: 1000px;
+            width: 1000px;
+            border: 2px solid red;
+
+        }
+        .left_right
+        {
+            height: 1000px;
+            width: 100px;
+            background-color: aqua;
+            float: left;
+
+        }
+        .mid
+        {
+            height: 1000px;
+            width: 800px;
+            float: left;
+        }
+
+        .left_top_right_bottom
+        {
+            height: 800px;
+            width: 100px;
+            background-color:rgb(78, 51, 153) ;
+        }
+        .left_bottom_right_top
+        {
+            height: 200px;
+            width: 100px;
+            background-color:rgb(236, 17, 17) ;
+        }
+
+        .mid_top_bottom
+        {
+            height: 150px;
+            width: 800px;
+        }
+        .mid_mid 
+        {
+            height: 700px;
+            width: 800px;
+        }
+        .mid_top_bottom_abc
+        {
+            height: 50px;
+            width: 700px;
+            background-color: blue;
+            margin: 0px 50px;
+        }
+        
+        .m1
+        {
+            height: 700px;
+            width: 400px;
+            margin: 0px 200px;
+            padding: 200px 0px;
+            border-left: 1px solid red;
+            border-right: 1px solid red;
+            box-sizing: border-box;
+
+        }
+        .m2
+        {
+            height: 300px;
+            width: 400px;
+            background-color: rgb(233, 54, 54);
+        }
+        .m3
+        {
+            height: 300px;
+            width: 150px;
+            margin: 0px 125px;
+            padding: 125px 0px;
+            border-left: 1px solid rgb(243, 111, 111);
+            border-right: 1px solid red;
+            box-sizing: border-box;
+            background-color: aquamarine;
+
+        }
+
+        .m4
+        {
+            height: 50px;
+            width: 150px;
+            border-top: 1px solid red;
+            border-bottom: 1px solid red;
+            box-sizing: border-box;
+            background-color: brown;
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Use Margin padding and many more concept </h1>
+    <div class="outer">
+        <div class="left_right">
+            <div class="left_top_right_bottom"></div>
+            <div class="left_bottom_right_top"></div>
+        </div>
+        <div class="mid">
+            <div class="mid_top_bottom" style="border-bottom: 1px solid red;">
+                <div class="mid_top_bottom_abc"></div>
+                <div class="mid_top_bottom_abc" style="background-color: rgb(212, 236, 76);"></div>
+                <div class="mid_top_bottom_abc" "></div>
+            </div>
+            <div class="mid_mid">
+                <div class="m1">
+                    <div class="m2">
+                        <div class="m3">
+                            <div class="m4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mid_top_bottom" style="border-top: 1px solid red;">
+                <div class="mid_top_bottom_abc" "></div>
+                <div class="mid_top_bottom_abc" style="background-color: rgb(207, 238, 30);"></div>
+                <div class="mid_top_bottom_abc"></div>
+            </div>
+        </div>
+        <div class="left_right">
+            <div class="left_bottom_right_top"></div>
+            <div class="left_top_right_bottom"></div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

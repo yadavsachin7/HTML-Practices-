@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        #login
+        {
+            height:320px;
+            width: 300px;
+            margin: 50px auto;
+        }
+        #header
+        {
+            height: 80px;
+            width: 300px;
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            line-height: 80px;
+            font-weight: bold;
+            border-radius: 10px 10px 0px 0px;
+            box-shadow: 2px 2px 5px  black,-2px 0px   5px  black ;
+            background:linear-gradient(50deg,rgb(223, 70, 121),rgb(212, 58, 161),rgb(108, 79, 233)) ;
+        }
+        #login_form
+        {
+            height: 240px;
+            width: 300px;
+            background-color: white;
+            border-radius: 0px 0px 10px 10px;
+            box-shadow: 2px 2px 5px  black,-2px 0px   5px  black ;
+
+
+
+
+        }
+        input{
+            height: 35px;
+            width: 250px;
+            border-radius: 40px;
+            margin: 15px;
+
+        }
+        #btn
+        {
+            height: 35px;
+            width: 250px;
+            border-radius:40px;
+            margin: 15px;
+            background:linear-gradient(50deg,rgb(223, 70, 121),rgb(212, 58, 161),rgb(108, 79, 233)) ;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="login">
+        <div id="header">
+            Login Form
+        </div>
+        <form action="" method="post">
+            <div id="login_form">
+            <input type="email" placeholder="Email Address" name="email" required ><br>
+            <input type="password" placeholder="Password" name="pass" required><br>
+            <button id="btn">Login</button>
+        </div>
+        </form>
+    </div>
+</body>
+</html>

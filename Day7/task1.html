@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo King</title>
+    <style>
+        .ludo
+        {
+            height: 600px;
+            width: 600px;
+            margin: 30px auto;
+        }
+        .left
+        {
+            height: 580px;
+            width: 250px;
+            float: left;
+        }
+        /* left top CSS  */ 
+        .left_right_top
+        {
+            height: 150px;
+            width: 150px;
+            background-color: blue;
+            padding: 50px;
+        }
+
+        .lrt_inner
+        {
+            height:150px ;
+            width: 150px;
+            background-color: white;
+
+        }
+        .lrt_inner_left
+        {
+            height:150px ;
+            width: 75px;
+            float: left;
+        }
+
+        .lrt_inner_right
+        {
+            height:150px ;
+            width: 75px;
+            float: left;
+        }
+        .box_top
+        {
+            height:40px ;
+            width: 40px;
+            background-color: blue;
+            margin: 20px;
+        }
+        .box_bottom
+        {
+            height:40px ;
+            width: 40px;
+            background-color: blue;
+            margin: 20px;
+        }
+
+        /* left mid css */
+
+        .left_right_mid
+        {
+            height: 100px;
+            width: 250px;
+        }
+        .lrm_row1
+        {
+            height: 30px;
+            width: 250px;
+        }
+        .lrm_row2
+        {
+            height: 30px;
+            width: 250px;
+        }
+        .lrm_row3
+        {
+            height: 30px;
+            width: 250px;
+        }
+        .ml_box
+        {
+            height: 33px;
+            width: 41.65px;
+            background-color: white;
+            float: left;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        .left_right_bottom
+        {
+            height: 150px;
+            width: 150px;
+            background-color: yellow;
+            padding: 50px;
+            
+        }
+        /*  mid box css */  
+        
+
+        .mid
+        {
+            height: 600px;
+            width: 100px;
+            float: left;
+        }
+
+        .mid_top
+        {
+            height: 250px;
+            width: 100px;
+        }
+        .mid_col
+        {
+            height: 250px;
+            width: 33px;
+            float: left;
+
+        }
+        .m_box{
+            height: 41.8px;
+            width: 33px;
+            background-color: white;
+            float: left;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+
+        .mid_king
+        {
+            height: 98px;
+            width: 99px;
+            background-color: black;
+        }
+        .mid_bottom
+        {
+            height: 250px;
+            width: 100px;
+        }
+
+
+        .right
+        {
+            height: 600px;
+            width: 250px;
+            float: left;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="ludo">
+
+        <div class="left">
+            <div class="left_right_top">
+                <div class="lrt_inner">
+                    <div class="lrt_inner_left">
+                        <div class="box_top"></div>
+                        <div class="box_bottom"></div>
+                    </div>
+                    <div class="lrt_inner_right">
+                        <div class="box_top"></div>
+                        <div class="box_bottom"></div>                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="left_right_mid">
+                <div class="lrm_row1">
+                    <div class="ml_box"></div>
+                    <div class="ml_box" style="background-color: blue;"></div>
+                    <div class="ml_box"></div>
+                    <div class="ml_box"></div>
+                    <div class="ml_box"></div>
+                    <div class="ml_box"></div>
+                </div>
+                <div class="lrm_row2">
+                    <div class="ml_box" style="font-size: 40px; line-height: 28px;">--</div>
+                    <div class="ml_box" style="background-color: blue;"></div>
+                    <div class="ml_box" style="background-color: blue;"></div>
+                    <div class="ml_box" style="background-color: blue;"></div>
+                    <div class="ml_box" style="background-color: blue;"></div>
+                    <div class="ml_box" style="background-color: blue;"></div>
+                </div>
+                <div class="lrm_row3">
+                    <div class="ml_box"></div>
+                    <div class="ml_box"></div>
+                    <div class="ml_box" style="font-size: 50px; text-align: center;">*</div>
+                    <div class="ml_box"></div>
+                    <div class="ml_box"></div>
+                    <div class="ml_box"></div>
+                </div>
+            </div>
+            <div class="left_right_bottom">
+                <div class="lrt_inner">
+                    <div class="lrt_inner_left">
+                        <div class="box_top" style="background-color: yellow;"></div>
+                        <div class="box_bottom" style="background-color: yellow;"></div>
+                    </div>
+                    <div class="lrt_inner_right">
+                        <div class="box_top" style="background-color: yellow;"></div>
+                        <div class="box_bottom" style="background-color: yellow;"></div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="mid">
+            <div class="mid_top">
+                <div class="mid_col">
+                    <div class="m_box"></div>
+                    <div class="m_box"></div>
+                    <div class="m_box" style="font-size: 50px; text-align: center;">*</div>
+                    <div class="m_box"></div>
+                    <div class="m_box"></div>
+                    <div class="m_box"></div>
+                </div>
+                <div class="mid_col">
+                    <div class="m_box"style="font-size: 30px;  text-align: center;" ><b>|</b></div>
+                    <div class="m_box" style="background-color: red;"></div>
+                    <div class="m_box" style="background-color: red;"></div>
+                    <div class="m_box" style="background-color: red;"></div>
+                    <div class="m_box" style="background-color: red;"></div>
+                    <div class="m_box" style="background-color: red;"></div>
+                </div>
+                <div class="mid_col">
+                    <div class="m_box"></div>
+                    <div class="m_box" style="background-color: red;"></div>
+                    <div class="m_box"></div>
+                    <div class="m_box"></div>
+                    <div class="m_box"></div>
+                    <div class="m_box"></div>
+                </div>
+            </div>
+
+            <div class="mid_king"></div>
+
+            <div class="mid_bottom">
+                <div class="mid_col">
+                    <div class="m_box"></div>
+                    <div class="m_box"></div>
+                    <div class="m_box"></div>
+                    <div class="m_box"></div>
+                    <div class="m_box" style="background-color: yellow;"></div>
+                    <div class="m_box"></div>
+                </div>
+                <div class="mid_col">
+                    <div class="m_box" style="background-color: yellow;"></div>
+                    <div class="m_box" style="background-color: yellow;"></div>
+                    <div class="m_box" style="background-color: yellow;"></div>
+                    <div class="m_box" style="background-color: yellow;"></div>
+                    <div class="m_box" style="background-color: yellow;"></div>
+                    <div class="m_box" style="font-size: 30px;  text-align: center;" ><b>|</b></div>
+                </div>
+                <div class="mid_col">
+                    <div class="m_box"></div>
+                    <div class="m_box"></div>
+                    <div class="m_box"></div>
+                    <div class="m_box" style="font-size: 50px; text-align: center;">*</div>
+                    <div class="m_box"></div>
+                    <div class="m_box"></div>
+                </div>
+            
+            </div>
+        </div>
+
+
+
+        <div class="right">
+            <div class="left_right_top" style="background-color: red;">
+                <div class="lrt_inner">
+                    <div class="lrt_inner_left">
+                        <div class="box_top" style="background-color: red;"></div>
+                        <div class="box_bottom" style="background-color: red;"></div>
+                    </div>
+                    <div class="lrt_inner_right">
+                        <div class="box_top" style="background-color: red;"></div>
+                        <div class="box_bottom" style="background-color: red;"></div>                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="left_right_mid">
+                <div class="lrm_row1">
+                    <div class="ml_box"></div>
+                    <div class="ml_box"  ></div>
+                    <div class="ml_box"></div>
+                    <div class="ml_box" style="font-size: 50px; text-align: center;">*</div>
+                    <div class="ml_box"></div>
+                    <div class="ml_box"></div>
+                </div>
+                <div class="lrm_row2">
+                    <div class="ml_box" style="background-color:green;"></div>
+                    <div class="ml_box" style="background-color: green;"></div>
+                    <div class="ml_box" style="background-color: green;"></div>
+                    <div class="ml_box" style="background-color: green;"></div>
+                    <div class="ml_box" style="background-color: green;"></div>
+                    <div class="ml_box" style="font-size: 40px; line-height: 28px;">--</div>
+                </div>
+                <div class="lrm_row3">
+                    <div class="ml_box"></div>
+                    <div class="ml_box"></div>
+                    <div class="ml_box"></div>
+                    <div class="ml_box"></div>
+                    <div class="ml_box" style="background-color:green;"></div>
+                    <div class="ml_box"></div>
+                </div>
+            </div>
+            <div class="left_right_bottom" style="background-color: green;">
+                <div class="lrt_inner">
+                    <div class="lrt_inner_left">
+                        <div class="box_top"  style="background-color: green;"></div>
+                        <div class="box_bottom" style="background-color: green;"></div>
+                    </div>
+                    <div class="lrt_inner_right">
+                        <div class="box_top" style="background-color: green;"></div>
+                        <div class="box_bottom" style="background-color: green;"></div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

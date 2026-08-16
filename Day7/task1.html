@@ -60,6 +60,10 @@
             background-color: blue;
             margin: 20px;
         }
+        #blu
+        {
+            background-color: blue;
+        }
 
         /* left mid css */
 
@@ -128,7 +132,7 @@
             width: 33px;
             background-color: white;
             float: left;
-            border: 2px solid black;
+            border: 1px solid black;
             box-sizing: border-box;
         }
 
@@ -150,6 +154,24 @@
             height: 600px;
             width: 250px;
             float: left;
+        }
+        .bluclr
+        {
+            background-color: blue;
+        }
+
+        .redclr
+        {
+            background-color: red;
+        }
+
+        .greenclr
+        {
+            background-color: green;
+        }
+        .yellowclr
+        {
+            background-color: yellow;
         }
         
     </style>
@@ -174,7 +196,7 @@
             <div class="left_right_mid">
                 <div class="lrm_row1">
                     <div class="ml_box"></div>
-                    <div class="ml_box" style="background-color: blue;"></div>
+                    <div class="ml_box bluclr" ></div>
                     <div class="ml_box"></div>
                     <div class="ml_box"></div>
                     <div class="ml_box"></div>
@@ -182,11 +204,11 @@
                 </div>
                 <div class="lrm_row2">
                     <div class="ml_box" style="font-size: 40px; line-height: 28px;">--</div>
-                    <div class="ml_box" style="background-color: blue;"></div>
-                    <div class="ml_box" style="background-color: blue;"></div>
-                    <div class="ml_box" style="background-color: blue;"></div>
-                    <div class="ml_box" style="background-color: blue;"></div>
-                    <div class="ml_box" style="background-color: blue;"></div>
+                    <div class="ml_box bluclr" ></div>  <!-- Here we are using two class in same element  -->
+                    <div class="ml_box bluclr" ></div>
+                    <div class="ml_box bluclr" ></div>
+                    <div class="ml_box bluclr"></div>
+                    <div class="ml_box bluclr" ></div>
                 </div>
                 <div class="lrm_row3">
                     <div class="ml_box"></div>
@@ -200,12 +222,12 @@
             <div class="left_right_bottom">
                 <div class="lrt_inner">
                     <div class="lrt_inner_left">
-                        <div class="box_top" style="background-color: yellow;"></div>
-                        <div class="box_bottom" style="background-color: yellow;"></div>
+                        <div class="box_top yellowclr" ></div>
+                        <div class="box_bottom yellowclr" ></div>
                     </div>
                     <div class="lrt_inner_right">
-                        <div class="box_top" style="background-color: yellow;"></div>
-                        <div class="box_bottom" style="background-color: yellow;"></div>                        
+                        <div class="box_top yellowclr" ></div>
+                        <div class="box_bottom yellowclr" ></div>                        
                     </div>
                 </div>
             </div>
@@ -226,15 +248,15 @@
                 </div>
                 <div class="mid_col">
                     <div class="m_box"style="font-size: 30px;  text-align: center;" ><b>|</b></div>
-                    <div class="m_box" style="background-color: red;"></div>
-                    <div class="m_box" style="background-color: red;"></div>
-                    <div class="m_box" style="background-color: red;"></div>
-                    <div class="m_box" style="background-color: red;"></div>
-                    <div class="m_box" style="background-color: red;"></div>
+                    <div class="m_box redclr" ></div>
+                    <div class="m_box redclr" ></div>
+                    <div class="m_box redclr" ></div>
+                    <div class="m_box redclr" ></div>
+                    <div class="m_box redclr" ></div>
                 </div>
                 <div class="mid_col">
                     <div class="m_box"></div>
-                    <div class="m_box" style="background-color: red;"></div>
+                    <div class="m_box redclr" ></div>
                     <div class="m_box"></div>
                     <div class="m_box"></div>
                     <div class="m_box"></div>
@@ -250,15 +272,15 @@
                     <div class="m_box"></div>
                     <div class="m_box"></div>
                     <div class="m_box"></div>
-                    <div class="m_box" style="background-color: yellow;"></div>
+                    <div class="m_box yellowclr" ></div>
                     <div class="m_box"></div>
                 </div>
                 <div class="mid_col">
-                    <div class="m_box" style="background-color: yellow;"></div>
-                    <div class="m_box" style="background-color: yellow;"></div>
-                    <div class="m_box" style="background-color: yellow;"></div>
-                    <div class="m_box" style="background-color: yellow;"></div>
-                    <div class="m_box" style="background-color: yellow;"></div>
+                    <div class="m_box yellowclr" ></div>
+                    <div class="m_box yellowclr" ></div>
+                    <div class="m_box yellowclr" ></div>
+                    <div class="m_box yellowclr" ></div>
+                    <div class="m_box yellowclr" ></div>
                     <div class="m_box" style="font-size: 30px;  text-align: center;" ><b>|</b></div>
                 </div>
                 <div class="mid_col">
@@ -276,15 +298,15 @@
 
 
         <div class="right">
-            <div class="left_right_top" style="background-color: red;">
+            <div class="left_right_top redclr" >
                 <div class="lrt_inner">
                     <div class="lrt_inner_left">
-                        <div class="box_top" style="background-color: red;"></div>
-                        <div class="box_bottom" style="background-color: red;"></div>
+                        <div class="box_top redclr" ></div>
+                        <div class="box_bottom redclr" ></div>
                     </div>
                     <div class="lrt_inner_right">
-                        <div class="box_top" style="background-color: red;"></div>
-                        <div class="box_bottom" style="background-color: red;"></div>                        
+                        <div class="box_top redclr" ></div>
+                        <div class="box_bottom redclr" ></div>                        
                     </div>
                 </div>
             </div>
@@ -299,11 +321,11 @@
                     <div class="ml_box"></div>
                 </div>
                 <div class="lrm_row2">
-                    <div class="ml_box" style="background-color:green;"></div>
-                    <div class="ml_box" style="background-color: green;"></div>
-                    <div class="ml_box" style="background-color: green;"></div>
-                    <div class="ml_box" style="background-color: green;"></div>
-                    <div class="ml_box" style="background-color: green;"></div>
+                    <div class="ml_box greenclr" ></div>
+                    <div class="ml_box greenclr" ></div>
+                    <div class="ml_box greenclr" ></div>
+                    <div class="ml_box greenclr" ></div>
+                    <div class="ml_box greenclr" ></div>
                     <div class="ml_box" style="font-size: 40px; line-height: 28px;">--</div>
                 </div>
                 <div class="lrm_row3">
@@ -311,19 +333,19 @@
                     <div class="ml_box"></div>
                     <div class="ml_box"></div>
                     <div class="ml_box"></div>
-                    <div class="ml_box" style="background-color:green;"></div>
+                    <div class="ml_box greenclr" ></div>
                     <div class="ml_box"></div>
                 </div>
             </div>
-            <div class="left_right_bottom" style="background-color: green;">
+            <div class="left_right_bottom greenclr">
                 <div class="lrt_inner">
                     <div class="lrt_inner_left">
-                        <div class="box_top"  style="background-color: green;"></div>
-                        <div class="box_bottom" style="background-color: green;"></div>
+                        <div class="box_top greenclr"  ></div>
+                        <div class="box_bottom greenclr" ></div>
                     </div>
                     <div class="lrt_inner_right">
-                        <div class="box_top" style="background-color: green;"></div>
-                        <div class="box_bottom" style="background-color: green;"></div>                        
+                        <div class="box_top greenclr" ></div>
+                        <div class="box_bottom greenclr" ></div>                        
                     </div>
                 </div>
             </div>

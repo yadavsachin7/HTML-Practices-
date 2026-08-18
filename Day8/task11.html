@@ -1,0 +1,48 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Create a ball that moves up and down like it is bouncing. </title>
+
+        <style>
+            body{
+                background-color: rosybrown;
+                position: relative;
+            }
+
+            #ball{
+                height: 100px;
+                width: 100px;
+                border: 2px solid black;
+                border-radius: 50%;
+                background-color: magenta;
+                
+
+                position: absolute;
+               animation: bouncing 1s infinite /*alternate*/;
+            }
+
+
+                @keyframes bouncing{
+                    from{
+                top: 0px;
+                right: 100px;
+            }
+            to{
+                top: 500px;
+                right: 100px;
+            }
+                }
+
+
+        </style>
+    </head>
+    <body>
+
+        <!--  Create a ball that moves up and down like it is bouncing.  -->
+
+        <div id="ball"></div>
+        
+    </body>
+    </html>

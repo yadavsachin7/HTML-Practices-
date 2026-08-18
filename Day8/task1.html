@@ -5,88 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .outer
-        {
-            height: 300px;
-            width: 500px;
-            background-color: aquamarine;
+        body{
+            background-color: bisque;
             position: relative;
         }
-        .div1
+        .box1
         {
-            height: 50px;
+            height: 100px;
             width: 100px;
-            background-color: rgb(127, 146, 255);
+            background-color: red;
             position: absolute;
-            top: 10px;
-            left: 10px;
+            top: 0px;
+            left: 0px;
+
         }
-        .div2
+        .box2
         {
-            height: 50px;
-            width: 200px;
-            background-color: rgb(255, 127, 197);
-            position: absolute;
-            top: 10px;
-            left: 150px;
-        }
-        .div3
-        {
-            height: 50px;
+            height: 100px;
             width: 100px;
-            background-color: rgb(127, 146, 255);
+            background-color: rgb(25, 0, 255);
             position: absolute;
-            top: 10px;
-            right: 10px;
+            top: 200px;
+            left: 0px;
+            /* Animation css */
+            animation-name: box;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-iteration-count: 3;
+            
         }
-        .div4
+        /* .box3
         {
-            height: 50px;
+            height: 100px;
             width: 100px;
-            background-color: rgb(255, 204, 127);
+            background-color: rgb(9, 255, 0);
             position: absolute;
-            top: 120px;
-            left: 200px;
-        }
-        .div5
-        {
-            height: 50px;
-            width: 100px;
-            background-color: rgb(127, 146, 255);
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-        }
-        .div6
-        {
-            height: 50px;
-            width: 200px;
-            background-color: rgb(127, 255, 138);
-            position: absolute;
-            bottom: 10px;
-            left: 150px;
-        }
-        .div7
-        {
-            height: 50px;
-            width: 100px;
-            background-color: rgb(127, 146, 255);
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
+            left: 0px;
+            bottom: -600px;
+            
+        } */
+
+        @keyframes box{
+            0%
+            {
+                left:0px;
+            }
+            50%
+            {
+                right: 300px;
+            }
+            100%
+            {
+                right: 100px;
+            }
         }
     </style>
-    
 </head>
 <body>
-    <div class="outer">
-        <div class="div1"></div>
-        <div class="div2"></div>
-        <div class="div3"></div>
-        <div class="div4"></div>
-        <div class="div5"></div>
-        <div class="div6"></div>
-        <div class="div7"></div>
-    </div>
+    <div class="box1">Box1</div>
+    <div class="box2">Box2</div>
+    <div class="box3">Box3</div>
 </body>
 </html>

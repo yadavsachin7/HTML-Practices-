@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: bisque;
+            position: relative;
+        }
+        .box
+        {
+            height: 50px;
+            width: 50px;
+            background-color: rgb(25, 25, 26);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            animation-name: movee ;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+
+
+
+        @keyframes movee{
+            from{
+                left:0px;
+            }
+            to{
+                left: 1300px;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html>
+
+<head>
+
+    <style>
+
+
+            body{
+
+                background-color: rosybrown;
+                position: relative;
+            }
+
+
+                #box{
+
+                    height: 80px;
+                    width: 200px;
+                    background-color: rgb(225, 65, 177);
+                    border: 2px solid black;
+                    border-radius: 5px;
+                    text-align: center;
+                    line-height: 80px;
+                    font-size: 30px;
+                    
+
+                     position: absolute;
+        
+                    animation-name: movingBox;
+                    animation-duration: 2s;
+                    animation-iteration-count: infinite;
+
+                }
+                @keyframes movingBox {
+                    from{
+                        top: 100px;
+                        left: 50px;
+                    }
+                    to{
+                        right: 50px;
+                        top: 100px;
+                    }
+                    
+                }
+    </style>
+</head>
+
+<body>
+
+    <!-- Create a box that moves from left to right continuously.  -->
+
+        <div id="box"> Moving-Box </div>
+
+
+</body>
+</html>

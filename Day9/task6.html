@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(247, 250, 247);
+        }
+        .navbar
+        {
+            height: 80px;
+            width: 100%;
+
+        }
+        
+        
+        /* ol li 
+        {
+            list-style-type: none;
+            padding-left: 40px;
+            line-height: 50px;
+            color: white;
+            font-size: 20px;
+        } */
+        #menu
+        {
+            height: 80px;
+            width:100% ;
+            background-color: green;
+            float: left;
+        }
+        ul li{
+            list-style-type: none;
+            float: left;
+            padding-left:100px ;
+            line-height: 50px;
+        }
+        ul li a{
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        /* submenu CSS  */
+        .submenu
+        {
+            position: absolute;
+            top: 90px;
+            left: 350px;
+            opacity: 0;
+        }
+        .submenu li 
+        {
+            float: none;
+            line-height: 20px;
+
+        }
+        .submenu li a{
+            background-color: green;
+            color: aliceblue;
+            width: 150px;
+            display: block;
+        }
+        ul li:hover .submenu
+        {
+            opacity: 1;
+        }
+
+        /* submenu2 CSS  */
+        
+         ul li:hover .submenu2
+        {
+            position: absolute;
+            top: 50px;
+            left: 140px;
+            opacity: 0;
+
+        }
+          ul li li:hover  .submenu2
+        {
+            opacity: 1;
+        }
+        ul li ul li:hover {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+        <div id="menu">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">SERVICES</a>
+                    <ul class="submenu">
+                        <li><a href="">HTML</a></li>
+                        <li><a href="">CSS</a></li>
+                        <li><a href="" >JS Framework</a>
+                            <ul class="submenu2">
+                                <li><a href="">Angular.js</a></li>
+                                <li><a href="">React.js</a></li>
+                                <li><a href="">Next.js</a></li>
+                                <li><a href="">Express.js</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Jquery</a></li>
+                    </ul>
+                </li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            border-radius: 10px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            animation-name: bx;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes bx
+        {
+            from
+            {
+                top: 0px;
+                left: 0px;
+            }
+            to
+            {
+                top: 500px;
+                right: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

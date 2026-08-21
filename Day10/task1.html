@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+body{
+    background-color: black;
+}
+
+#navbar{
+
+    height: 100px;
+    width: 1200px;
+    background-color: rgb(255, 0, 157);
+    padding-top: 10px;
+}
+
+.nav-box{
+
+    height: 30px;
+    width: 90px;
+    float: left;
+    margin-left: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 25px;
+
+    position: relative;
+}
+
+.nav-box a{
+
+    text-decoration: none;
+    color: white;
+}
+
+.nav-box ul{
+
+    position: absolute;
+    top: 30px;
+    left: 0px;
+
+    width: 150px;
+
+    padding: 0px;
+    margin: 0px;
+
+    opacity: 0;
+}
+
+.nav-box:hover > ul{
+
+    opacity: 1;
+}
+
+.nav-box ul li{
+
+    list-style-type: none;
+
+    width: 150px;
+    height: 30px;
+
+    background-color: rgb(218, 241, 9);
+
+    border: 2px solid black;
+
+    line-height: 30px;
+
+    position: relative;
+}
+
+.nav-box ul li ul{
+
+    position: absolute;
+
+    top: 0px;
+    left: 150px;
+
+    opacity: 0;
+}
+
+.nav-box ul li:hover > ul{
+
+    opacity: 1;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <div id="navbar">
+
+        <div class="nav-box">
+            <a href="">home</a>
+        </div>
+
+        <div class="nav-box">
+            <a href="">about</a>
+        </div>
+
+        <div class="nav-box">
+            <a href="">about</a>
+        </div>
+
+        <div class="nav-box">
+
+            <a href="">service</a>
+
+            <ul>
+
+                <li>
+                    <a href="">web design</a>
+                </li>
+
+                <li>
+                    <a href="">web development</a>
+                </li>
+
+                <li>
+                    <a href="">wire housing</a>
+                </li>
+
+                <li>
+
+                    <a href="">graphic design</a>
+
+                    <ul>
+
+                        <li>
+                            <a href="">photoshop</a>
+                        </li>
+
+                        <li>
+                            <a href="">pagechanger</a>
+                        </li>
+
+                        <li>
+                            <a href="">addition sign</a>
+                        </li>
+
+                        <li>
+                            <a href="">bootstrap</a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="nav-box">
+            <a href="">blog</a>
+        </div>
+
+        <div class="nav-box">
+            <a href="">contact</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

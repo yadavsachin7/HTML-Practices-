@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+        .container
+        {
+            min-height: 1000px;
+            width: 1350px;
+            background-color: antiquewhite;
+        }
+        /* slider CSS  */
+        .slider
+        {
+            height: 300px;
+            width: 1350px;
+            background: url("../img2.jpg");
+            background-repeat: no-repeat;
+            background:cover ;
+        }
+        /* contentGallery */
+        .contentGallery
+        {
+            height: 300px;
+            width: 1350px;
+            background-color: rgb(227, 230, 230);
+            padding: 10px 0px;
+        }
+        .contentg
+        {
+            height: 300px;
+            width: 300px;
+            float: left;
+            margin-left:25px ;
+            
+        }
+        .contentTop
+        {
+            height: 250px;
+            width: 310px;
+            background-color: rgb(243, 187, 82);
+            border-radius: 10px 10px 0px 0px;
+        }
+        .contentBottom
+        {
+            height: 50px;
+            width: 310px;
+            line-height: 50px;
+            border-radius: 0px 0px 10px 10px ;
+            background-color: aliceblue;
+
+        }
+        #contentBtn
+        {
+            height: 40px;
+            width: 150px;
+            margin: 20px;
+            background-color: rgb(77, 66, 66);
+            color: white;
+            font-size: 16px;
+            border-radius: 10px;
+            border: none;
+
+        }
+        .textp
+        {
+            font-weight: bold;
+            font-size: 21px;
+            margin: 0px 20px;
+        }
+        .text
+        {
+            font-size: 20px;
+            margin:  20px;
+            color: rgb(52, 63, 75);
+        }
+        .textb
+        {
+            font-size: 18px;
+            margin: 0px 20px;
+        }
+        #bottomBtn
+        {
+            height: 30px;
+            width: 150px;
+            background-color: rgb(240, 162, 17);
+            color: white;
+            font-size: 16px;
+            border-radius: 10px;
+            border: none;
+            margin-left: 40px;
+
+        }
+        .colorc
+        {
+            background-color: rgb(75, 240, 176);
+        }
+
+
+        /* Batches CSS  */
+        .batchbox
+        {
+            height: 600px;
+            width: 1350px;
+
+
+        }
+        .batch{
+            height: 500px;
+            width:310px;
+            float: left;
+            margin-left: 20px;
+
+        }
+        .imgbox
+        {
+            height: 300px;
+            width: 310px;
+
+        }
+        img
+        {
+            height: 300px;
+            width: 310px;
+            border-radius: 10px 10px 0px 0px ;
+
+        }
+        .detailbox
+        {
+            height: 120px;
+            width: 310px;
+            background-color: white;
+
+        }
+        .p
+        {
+            font-size:20px ;
+            font-weight: bold;
+            margin: 0px 20px;
+        }
+        .para
+        {
+            font-size:19px ;
+            margin: 10px 20px;
+        }
+        .para2
+        {
+            font-size:18px ;
+            margin: 10px 20px;
+        }
+        .buttonbox
+        {
+            height: 80px;
+            width: 310px;
+            background-color: aliceblue;
+            border-radius: 0px 0px 10px 10px ;
+        }
+        .batchbtn1
+        {
+            height: 40px;
+            width: 100px;
+            color: white;
+            border-radius: 10px;
+            border: none;
+            margin: 13px;
+            background-color: blueviolet;
+
+        }
+        .batchbtn2
+        {
+            height: 40px;
+            width: 100px;
+            color: white;
+            border-radius: 10px;
+            border: none;
+            margin: 13px;
+            margin-left: 67px;
+            background-color: blueviolet;
+            
+        }
+
+
+
+
+        /* ufooter CSS  */
+        .ufooter
+        {
+            height: 300px;
+            width: 1350px;
+            color: white;
+            
+        }
+        .contentLeft
+        {
+            height: 300px;
+            width: 1050px;
+            background-color: rgb(80, 69, 69); 
+            float: left;
+            padding: 0px 100px;
+            box-sizing: border-box;
+        }
+        .contentRight
+        {
+            height: 300px;
+            width: 300px;
+            background-color: rgb(80, 69, 69);
+            float: left;
+            position: relative;
+            
+        }
+        .p1class
+        {
+            font-size: 35px;
+            font-weight: bold;
+            color: white;
+        }
+        .p2class
+        {
+            font-size: 20px;
+            color: white;
+
+        }
+        .ufooterBtn
+        {
+            height: 30px;
+            background-color: orange;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            border: none;
+
+        }
+        .ufooterBtn2
+        {
+            height: 30px;
+            font-size: 15px;
+            background-color: orange;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            border: none;
+            position: absolute;
+            top: 120px;
+            right: 150px;
+        }
+
+        /* Online Cources CSS  */
+        
+        .cources
+        {
+            height: 550px;
+            width: 1350px;
+            padding: 10px;
+
+
+        }
+        .courcebox{
+            height: 500px;
+            width:310px;
+            float: left;
+            margin-left: 20px;
+            
+
+        }
+        .imgbox
+        {
+            height: 300px;
+            width: 310px;
+
+        }
+        img
+        {
+            height: 300px;
+            width: 310px;
+            border-radius: 10px 10px 0px 0px ;
+
+        }
+        .detailbox
+        {
+            height: 160px;
+            width: 310px;
+            background-color: white;
+            border-radius: 0px 0px 10px 10px ;
+
+        }
+        .p
+        {
+            font-size:20px ;
+            font-weight: bold;
+            margin: 0px 20px;
+            padding-top: 10px;
+        }
+        .para
+        {
+            font-size:19px ;
+            margin: 10px 20px;
+        }
+        .para2
+        {
+            font-size:18px ;
+            margin: 10px 20px;
+        }
+
+
+
+
+        /* footer CSS */
+        .footer{
+            height: 500px;
+            width: 1350px;
+             padding: 20px 100px; 
+             box-sizing: border-box;
+             background-color: rgb(18, 19, 19);
+            
+        }
+        .footerList
+        {
+            height: 450px;
+            width: 1200px;
+            column-count: 4;
+            column-gap: 22px;
+        }
+        .footerlist
+        {
+            font-size: 25px;
+            list-style-type: none;
+            color: white;
+            font-weight: bold;     
+            margin-bottom: 20px;
+
+        }
+        ul li{
+            color: white;
+            font-size: 19px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <!-- slider start -->
+        <div class="slider">
+            
+        </div>
+        <!-- slider end  -->
+         <!-- ********************** -->
+          <!-- content start -->
+        <div class="contentGallery">
+            <div class="contentg">
+                <div class="contentTop">
+                    <button id="contentBtn">SummerTraining</button>
+                    <p class="textp">Gain Practical Skill and industry exposure duri... </p>
+                    <p class="text">Techpile Offers you to appreciated summer training </p>
+                    <p class="textb"> 50k+ Student Thought So far </p>
+                    
+                </div>
+                <div class="contentBottom">
+                    <span class="textb">&#8377 7000/-</span> <button id="bottomBtn">Explore Syllabus</button>
+                </div>
+            </div>
+            <div class="contentg " >
+                <div class="contentTop colorc">
+                    <button id="contentBtn">WinterTraining</button>
+                    <p class="textp">Gain Practical Skill and industry exposure duri... </p>
+                    <p class="text">Techpile Offers you to appreciated summer training </p>
+                    <p class="textb"> 50k+ Student Thought So far </p>
+                    
+                </div>
+                <div class="contentBottom">
+                    <span class="textb">&#8377 7000/-</span> <button id="bottomBtn">Explore Syllabus</button>
+                </div>
+            </div>
+            <div class="contentg">
+                <div class="contentTop">
+                    <button id="contentBtn">VocationalTraining</button>
+                    <p class="textp">Gain Practical Skill and industry exposure duri... </p>
+                    <p class="text">Techpile Offers you to appreciated summer training </p>
+                    <p class="textb"> 50k+ Student Thought So far </p>
+                    
+                </div>
+                <div class="contentBottom">
+                    <span class="textb">&#8377 7000/-</span> <button id="bottomBtn">Explore Syllabus</button>
+                </div>
+            </div>
+            <div class="contentg">
+                <div class="contentTop colorc">
+                    <button id="contentBtn">Apprenticeship</button>
+                    <p class="textp">Gain Practical Skill and industry exposure duri... </p>
+                    <p class="text">Techpile Offers you to appreciated summer training </p>
+                    <p class="textb"> 50k+ Student Thought So far </p>
+                    
+                </div>
+                <div class="contentBottom">
+                    <span class="textb">&#8377 7000/-</span> <button id="bottomBtn">Explore Syllabus</button>
+                </div>
+            </div>
+        </div>
+        <!-- content end  -->
+
+
+        <!-- UPcoming Batches start -->
+         <div class="batchbox">
+            <h1>Upcoming Batches</h1>
+            <div class="batch">
+                <div class="imgbox">
+                    <img src="../image1.png" alt="Image Not found">
+                </div>
+                <div class="detailbox">
+                    <p class="p">Join Summer Training</p>
+                    <p class="para">Techpile Technology Pvt...</p>
+                    <p class="para2">Duration: 4-6 Months</p>
+                    <p class="para2" >Start From 25 August 2026</p>
+                </div>
+                <div class="buttonbox">
+                    <button class="batchbtn1">Show Details</button>
+                    <button class="batchbtn2">Register Now</button>
+                </div>
+            </div>
+
+
+            <div class="batch">
+                <div class="imgbox">
+                    <img src="../image1.png" alt="Image Not found">
+                </div>
+                <div class="detailbox">
+                    <p class="p">Join Summer Training</p>
+                    <p class="para">Techpile Technology Pvt...</p>
+                    <p class="para2">Duration: 4-6 Months</p>
+                    <p class="para2" >Start From 25 August 2026</p>
+                </div>
+                <div class="buttonbox">
+                    <button class="batchbtn1">Show Details</button>
+                    <button class="batchbtn2">Register Now</button>
+                </div>
+            </div>
+
+
+            <div class="batch">
+                <div class="imgbox">
+                    <img src="../image1.png" alt="Image Not found">
+                </div>
+                <div class="detailbox">
+                    <p class="p">Join Summer Training</p>
+                    <p class="para">Techpile Technology Pvt...</p>
+                    <p class="para2">Duration: 4-6 Months</p>
+                    <p class="para2" >Start From 25 August 2026</p>
+                </div>
+                <div class="buttonbox">
+                    <button class="batchbtn1">Show Details</button>
+                    <button class="batchbtn2">Register Now</button>
+                </div>
+            </div>
+
+
+            <div class="batch">
+                <div class="imgbox">
+                    <img src="../image1.png" alt="Image Not found">
+                </div>
+                <div class="detailbox">
+                    <p class="p">Join Summer Training</p>
+                    <p class="para">Techpile Technology Pvt...</p>
+                    <p class="para2">Duration: 4-6 Months</p>
+                    <p class="para2" >Start From 25 August 2026</p>
+                </div>
+                <div class="buttonbox">
+                    <button class="batchbtn1">Show Details</button>
+                    <button class="batchbtn2">Register Now</button>
+                </div>
+            </div>
+         </div>
+        <!-- UPcoming Batches end -->
+
+
+
+
+        <!-- ****** -->
+        <!-- ufooter start -->
+        <div class="ufooter">
+            <div class="contentLeft">
+                <p class="p1class">Unlock 24*7 Learning Access To Multiple Technology Courses With
+                      <span style="color: orange;">Code Helper</span>  
+                </p>
+                <p class="p2class">neque aperiam et aspernatur ipsam odio quibusdam. Aperiam, 
+                     quasi! At ad, voluptates eos laborum animi reprehenderit!
+                </p>
+                <button class="ufooterBtn">.NET MVC </button>
+                <button class="ufooterBtn">MERN STACK</button>
+                <button class="ufooterBtn">PHP LARAVEL</button>
+                <button class="ufooterBtn">ANGULAR </button>
+                <button class="ufooterBtn">PYTHON PROGRAMMING</button>
+                <button class="ufooterBtn">DJANGO</button>
+                <button class="ufooterBtn">DATA SCIENCE</button>
+                <button class="ufooterBtn">AI/ML</button>   &nbsp and <br> 
+                <span>Many more</span>
+            </div>
+            <div class="contentRight">
+                <button class="ufooterBtn2">Click To Purchage</button>
+               
+            </div>
+        </div>
+           <!-- ufooter end  -->
+
+
+
+           <!-- Online cources Section  Start  -->
+            <div class="cources">
+                <h1>Online Cources</h1>
+
+                <div class="courcebox">                              
+                <div class="imgbox">
+                    <img src="../image.png" alt="Image Not found">
+                </div>
+                <div class="detailbox">
+                    <p class="p">.Net  Full Stack Developer</p>
+                    <p class="para">12+ Lessons</p>
+                    <hr>
+                    <p class="para2">***** 4.0(10)</p>
+                    <p class="para2" >Rs.14999.00</p>
+                </div>
+
+                </div>
+
+                <div class="courcebox">
+            
+                <div class="imgbox">
+                    <img src="../image1.png" alt="Image Not found">
+                </div>
+                <div class="detailbox">
+                    <p class="p">.Net  Full Stack Developer</p>
+                    <p class="para">12+ Lessons</p>
+                    <hr>
+                    <p class="para2">***** 4.0(10)</p>
+                    <p class="para2" >Rs.14999.00</p>
+                </div>
+                </div>
+
+                <div class="courcebox">
+            
+                <div class="imgbox">
+                    <img src="../image.png" alt="Image Not found">
+                </div>
+                <div class="detailbox">
+                    <p class="p">.Net  Full Stack Developer</p>
+                    <p class="para">12+ Lessons</p>
+                    <hr>
+                    <p class="para2">***** 4.0(10)</p>
+                    <p class="para2" >Rs.14999.00</p>
+                </div>
+                </div>
+
+                <div class="courcebox">
+            
+                <div class="imgbox">
+                    <img src="../image1.png" alt="Image Not found">
+                </div>
+                <div class="detailbox">
+                    <p class="p">.Net  Full Stack Developer</p>
+                    <p class="para">12+ Lessons</p>
+                    <hr>
+                    <p class="para2">***** 4.0(10)</p>
+                    <p class="para2" >Rs.14999.00</p>
+                </div>
+                </div>
+            </div>
+           <!-- Online cources Section  end    --> 
+
+            <!-- footer start -->
+        <div class="footer">
+            <div class="footerList">
+                <ul>               
+                <li class="footerlist">Our Popular Training Program</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li class="footerlist">Our Popular Training Program</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li class="footerlist">Our Popular Training Program</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li class="footerlist">Our Popular Training Program</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                <li>Summer Training in Lucknow</li>
+                
+            </ul>
+            </div>
+        </div>
+            <!-- footer end -->
+    </div>
+</body>
+</html>

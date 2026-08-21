@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menubox
+        {
+            height: 100px;
+            width: 1000px;
+            background-color: antiquewhite;
+
+        }
+        .submenu1 li
+        {
+            float: left;
+            list-style-type: none;
+            line-height: 100px;
+            margin-left: 40px;
+            font-size: 20px;
+            
+        }
+        .submenu1  li a{
+            text-decoration: none;
+        }
+
+        /* submenu 2 CSS  */
+        .submenu2 li
+        {
+            float: none;
+            line-height: normal;
+            
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="menubox">
+        <ul class="submenu1">
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a>
+                <ul class="submenu2">
+                    <li><a href="">More</a></li>
+                    <li><a href="">More</a></li>
+                    <li><a href="">More</a></li>
+                    <li><a href="">More</a></li>
+                    <li><a href="">More</a></li>
+                </ul>
+            </li>
+            <li><a href="">Home</a></li>
+            
+        </ul>
+    </div>
+</body>
+</html>

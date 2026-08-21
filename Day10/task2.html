@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opacity walau</title>
+
+    <style>
+
+body{
+    background-color: black;
+}
+
+#navbar{
+    height: 70px;
+    width: 1200px;
+    background-color: #00d41c;
+    margin: 0px auto;
+}
+
+.nav-box{
+    height: 40px;
+    width: 140px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 15px;
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+}
+
+.nav-box a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.nav-box ul{
+    position: absolute;
+    top: 40px;
+    left: 0px;
+
+    width: 150px;
+
+    margin: 0px;
+    padding: 0px;
+
+    opacity: 0;
+}
+
+.nav-box:hover ul{
+    opacity: 1;
+}
+
+.nav-box ul li{
+    list-style-type: none;
+
+    width: 150px;
+    height: 40px;
+
+    background-color: #00d412;
+
+    line-height: 40px;
+
+    position: relative;
+}
+
+
+.nav-box ul li ul{
+    position: absolute;
+
+    top: 0px;
+    left: 150px;
+
+    opacity: 0;
+}
+
+.nav-box ul li:hover ul{
+    opacity: 1;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <div id="navbar">
+
+        <div class="nav-box">
+            <a href="">HOME</a>
+        </div>
+
+
+        <div class="nav-box">
+
+            <a href="">HTML & CSS⌄</a>
+
+            <ul>
+
+                <li>
+                    <a href="">Web Design</a>
+                </li>
+
+                <li>
+                    <a href="">Login Forms</a>
+                </li>
+
+                <li>
+                    <a href="">Card Design</a>
+                </li>
+
+                <li>
+
+                    <a href="">More →</a>
+
+                    <ul>
+
+                        <li>
+                            <a href="">Neumorphism</a>
+                        </li>
+
+                        <li>
+                            <a href="">Pre-loader</a>
+                        </li>
+
+                        <li>
+                            <a href="">Glassmorphism</a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="nav-box">
+
+            <a href="">JAVASCRIPT</a>
+        </div>
+
+
+        <div class="nav-box">
+            <a href="">ABOUT US</a>
+        </div>
+
+
+        <div class="nav-box">
+            <a href="">CONTACT US</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

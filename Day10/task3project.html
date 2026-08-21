@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* container CSS   */
+        .container
+        {
+            min-height: 500px;
+            min-width: 1200px;
+            background-color: aquamarine;
+            
+        }
+
+        /* Upper Header  start CSS  */ 
+        .uheader
+        {
+            height: 50px;
+            width: 1200px;
+            background-color: rgb(212, 115, 115);
+        }
+        
+        .ucol
+        {
+            height: 50px;
+            width: 400px;
+            float: left;
+            line-height: 50px;
+            color: white;
+        }
+        .ucol a {
+            height: 30px;
+            width: 50px;
+            border-radius: 10px;
+            background-color: white;
+            color: black;
+            padding: 3px 10px;
+            text-decoration: none;
+        }
+
+        /* Header CSS start */
+        .header{
+            height: 70px;
+            width: 1200px;
+            background-color: rgb(174, 162, 218);
+
+        }
+        .hcol1
+        {
+            height: 70px;
+            width: 300px;
+            float: left;
+
+        }
+        .hcol2
+        {
+            height: 70px;
+            width: 900px;
+            float: left;
+            
+        }
+        .hcol2 ul li{
+            list-style-type: none;
+            line-height: 40px;
+            float: left;
+            padding-left: 40px;
+
+        }
+        .hcol2 ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 22px;    
+        }
+
+        /* cssss  */
+        .aboutus
+        {
+            min-height: 300px;
+        }
+
+        .aboutrow
+        {
+            height: 330px;
+            width: 1200px;
+            /* padding: 15px;
+            box-sizing: border-box; */
+        }
+
+        .aboutimg
+        {
+            height: 300px;
+            width: 500px;
+            float: left;
+        }
+
+        .aboutcontent
+        {
+            height: 300px;
+            width: 600px;
+            float: left;
+            padding: 15px;
+            padding-left: 15px;
+            font-size: 20px;
+        }
+
+
+        /* end   */
+
+        /* csss services  */
+        .services
+        {
+            min-height: 300px;
+        }
+        .srow
+        {
+            height: 300px;
+            width: 1000px;
+            margin: 0px auto;
+        }
+        .scard
+        {
+            height: 250px;
+            width: 300px;
+            background-color: rgb(224, 231, 238);
+            margin: 25px 16px;
+            padding: 15px;
+            box-sizing: border-box;
+            font-size: 22px;
+            text-align: justify;
+            box-shadow: 5px 5px 2px black;
+            border-radius: 15px;
+            transition: 2s;
+            float: left;
+
+        }
+        .scard:hover{
+            transform: scale(1.05);
+            transition: 2s;
+        }
+
+        /* end  */
+        .gallery
+        {
+            min-height: 600px;
+        }
+
+        #gallery-outer-box{
+            min-height: 650px;
+            min-width: 1200px;
+            background-color: whitesmoke;
+            margin: 10px auto;
+            /* padding-left: 50px;
+            padding-right: 50px; */
+            padding: 20px 0px;
+
+        }
+       
+        .box{
+            height: 300px;
+            width: 400px;
+            background-color: aliceblue;
+            margin-left: 30px;
+            border-radius: 10px;
+            border: 2px solid rgb(53, 42, 42);
+            float: left;
+            margin-bottom: 30px;
+        }
+
+         img{
+            height: 300px;
+            width: 400px;
+            border-radius: 8px;
+        }
+
+
+        .contactus
+        {
+            min-height: 300px;
+        }
+
+        /*    contact csss */
+
+        .contactrow
+        {
+            min-height: 300px;
+            width: 1000px;
+            margin: 0px auto;
+        }
+        .contactform
+        {
+            min-height: 300px;
+            width: 600px;
+            float: left;
+
+        }
+
+        .contactmap
+        {
+            min-height: 300px;
+            width: 400px;
+            float: left;
+            
+        }
+        .ufooter
+        {
+            min-height: 300px;
+            background-color: black;
+        }
+        .bfooter
+        {
+            height: 50px;
+            background-color: black;
+            color: white;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .ufooter-column{
+            background: black ;
+            color: white;
+            float: left;
+            margin-left: 50px;
+            padding-left: 20px;
+            padding-top: 20px;
+            
+
+        }
+        .ufooter-column li a{
+            text-decoration: none;
+            padding-top: 10px;
+            color: white;
+            
+            
+        }
+
+        .ufooter-column li{
+            margin-top: 10px;
+        }
+
+        li::marker{
+            color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="uheader">
+            <!--    upper header start  -->
+                <div class="ucol">+91123654789 || +9100000</div>
+                <div class="ucol">
+                    <a href="">ContactUs</a>
+                    <a href="">Register Now</a>
+                    <a href="">Login</a>
+                </div>
+                <div class="ucol">
+                    sachinyadav@gmail.com || infosachin@.in
+                </div>
+            <!--    upper header end  -->
+        </div>
+        <!-- Header start  -->
+         <div class="header">
+            <div class="hcol1"></div>
+            <div class="hcol2">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">AboutUs</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">ContactUs</a></li>
+                    <li><a href="">Register</a></li> 
+                    <li><a href="">Login</a></li>
+                    <li><a href="">More</a></li>
+                </ul>
+            </div>
+         </div>
+        <!-- Header end  -->
+         <div class="slider"></div>
+
+         <div class="aboutus">
+            <h1 style="text-align: center;">About <b style="color: rgb(25, 0, 255);">Us</b></h1>
+            <div class="aboutrow">
+                <div class="aboutimg">
+                    <img src="../img1.jpg" style="height: 300px; width: 500px;" alt="dekhat nahi ba ho ">
+                </div>
+                <div class="aboutcontent">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis non optio 
+                        culpa magni soluta ut earum unde sequi officia illo velit corrupti fugit 
+                        accusantium sit dolorum ipsum illum, ex odit.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis non optio 
+                        culpa magni soluta ut earum unde sequi officia illo velit corrupti fugit 
+                        accusantium sit dolorum ipsum illum, ex odit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis non optio 
+                        culpa magni soluta ut earum unde sequi officia illo velit corrupti fugit 
+                        accusantium sit dolorum ipsum illum, ex odit.
+                    </p>
+                </div>
+            </div>
+         </div>
+
+
+
+         <div class="services">
+            <h1 style="text-align: center;">Our <b style="color: rgb(111, 0, 255);">Services</b></h1>
+
+            <div class="srow">
+                <div class="scard">
+                    <h3>Online Training </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>   
+                </div>
+                <div class="scard">
+                    <h3>Online Training </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>   
+                </div>
+                <div class="scard">
+                    <h3>Online Training </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>   
+                </div>
+            </div>
+
+            
+
+         </div>
+
+
+         <!-- gallery box -->
+         <div class="gallery">
+            <h1 style="text-align: center;">Picture <b style="color: rgb(37, 15, 233);">Gallery</b></h1>
+            <div id="gallery-outer-box">
+                <div class="box">
+                    <img src="../img1.jpg" alt="somosa">
+                </div>
+                <div class="box">
+                    <img src="../img2.jpg" alt="somosa">
+                </div>
+                <div class="box">
+                    <img src="../img3.jpg" alt="somosa">
+                </div>
+
+                <div class="box">
+                    <img src="../img4.jpg" alt="somosa">
+                </div>
+                <div class="box">
+                    <img src="../img2.jpg" alt="somosa">
+                </div>
+                <div class="box">
+                    <img src="../img1.jpg" alt="somosa">
+                </div>
+                
+            </div>
+
+            </div>
+         </div>
+         <div class="contactus">
+            <h1 style="text-align: center;">Contact <b style="color: red;">Us</b></h1>
+            <div class="contactrow">
+                <div class="contactform"></div>
+                <div class="contactmap">
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2812.244555490189!2d80.9638446742207!3d26.89838026070855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39995785d5f7f1a5%3A0xffa47f1efe103f0d!2sTechpile%20Technology%20Private%20Limited!5e1!3m2!1sen!2sin!4v1787232194176!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </div>
+
+         </div>
+         <!-- upper footer conatact policy wala -->
+
+         <div class="ufooter-column">
+            <h2>Contact Techpile Technology</h2>
+            <span>
+                Phone Number <br>
+                +91 7007237006 <br> <br>
+
+                Email Address <br>
+                info@techpile.in <br> <br>
+
+                <u>Location:</u><br>
+                Plot No-43, Behind H.P Petrol <br>  Pump, Tedhi  <br>
+                Pulia Ring Rd, Sector 5, Vikas <br> Nagar,
+                 ucknow, Uttar Pradesh 226022
+            </span>
+         </div>
+         <div class="ufooter-column">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="https://www.techpile.in/index">Home</a></li>
+                <li><a href="https://www.techpile.in/About">About us</a></li>
+                <li><a href="https://www.techpile.in/register">Register</a></li>
+                <li><a href="https://www.techpile.in/Our-Placement">Our Placement</a></li>
+                <li><a href="https://www.techpile.in/contact-us">Contact Us</a></li>
+                <li><a href="https://www.techpile.in/student-accommodation">Share Accommodation Details</a></li>
+            </ul>
+         </div>
+         <div class="ufooter-column">
+            <h2>Policies & Feedback</h2>
+            <ul>
+                <li><a href="https://www.techpile.in/Feedback">Feedback</a></li>
+                <li><a href="https://www.techpile.in/Privacy-Policy">Privacy Policy</a></li>
+                <li><a href="https://www.techpile.in/Plan-And-Pricing">Plan and Pricing </a></li>
+                <li><a href="https://www.techpile.in/research-technologies">Research Technologies</a></li>
+                <li><a href="https://www.techpile.in/Refund-policy">Refund Policy</a></li>
+                <li><a href="https://www.techpile.in/Faq">FAQS</a></li>
+            </ul>
+         </div>
+         <div class="ufooter-column">
+            <h2>Popular Training Programs</h2>
+            <ul>
+                <li><a href="https://www.techpile.in/summer-training-for-cs">Best Company for Summer Internship in <br> Lucknow for CS and IT Students</a></li>
+                <li><a href="https://www.techpile.in/summer-training-for-ec">Best Company for Summer Internship in <br> Lucknow for Electronics Students
+                </a></li>
+                <li><a href="https://www.techpile.in/summer-training-for-me">Best Company for Summer Internship in <br> Lucknow for Mechanical Students</a></li>
+                <li><a href="https://www.techpile.in/apprenticeship-training">Best Company for Job Oriented Training <br>in Lucknow</a></li>
+            </ul>
+         </div>
+         <div class="ufooter"></div>
+         <div class="bfooter">
+            & Copy; All rights reserved Techpile Technology Pvt.Ltd. By Sachin Yadav 
+         </div>
+    </div>
+</body>
+</html>
